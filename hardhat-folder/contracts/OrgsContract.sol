@@ -94,6 +94,10 @@ uint256 public totalBalance;
 
         emit claimedToken(msg.sender, amount);
     }
+
+    function time () public view returns (uint256){
+        return block.timestamp;
+    }
 }
 
 
