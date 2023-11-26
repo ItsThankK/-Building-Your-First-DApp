@@ -3,61 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vesting DApp</title>
+  <link rel="stylesheet" href="style.css">
+  <title>My Vesting DApp</title>
 </head>
 <script defer src="script.js" type="module"></script>
 <body>
-  <h1>My Vesting DApp!</h1>
 
-  <button id="connectBtn">Connect Wallet</button>
+  <nav id="navbar">
+    <h1>My Vesting DApp</h1>
+    <button type="button" id="connectBtn">Connect Wallet</button>
+  </nav>
 
   <p id="accountAddress"></p>
 
   <div id="registerOrganization">
-    <input type="text" id="name" placeholder="Name">
-    <input type="text" id="symbol" placeholder="Token symbol">
-    <input type="text" id="orgAddress" placeholder="Organization address">
-    <input type="text" id="_initialSupply" placeholder="Token supply amount">
-    <input type="text" id="tokenAddress" placeholder="Token address">
-    <button id="registerOrganizationBtn">Register Organization</button>
-  </div> <br> <br>
+    <div class="form-wrap">
+    <form>
+      <h2>Register Organization</h2>
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="text" id="symbol" placeholder="Token symbol">
+      </div>
+      <div class="form-group">
+        <input type="text" id="orgAddress" placeholder="Organization address">
+      </div>
+      <div class="form-group">
+        <input type="text" id="_initialSupply" placeholder="Token supply amount">
+      </div>
+      <div class="form-group">
+        <input type="text" id="tokenAddress" placeholder="Token address">
+      </div>
+        <button type="button" id="registerOrganizationBtn">Register Organization</button>
+    </form>
+    </div>
+  </div>
 
   <div id="addStakeholder">
-    <input type="text" id="user" placeholder="Address">
-    <input type="text" id="amount" placeholder="Token amount">
-    <input type="text" id="vestingPeriod_Timelock" placeholder="Lock duration">
-    <input type="text" id="stakeholderType" placeholder="Type of stakeholder">
-    <button id="addStakeholderBtn">Add Stakeholder</button>
-  </div> <br> <br>
+    <div class="form-wrap">
+    <form>
+      <h2>Register Stakeholder</h2>
+      <div class="form-group">
+        <input type="text" id="user" placeholder="Address">
+      </div>
+      <div class="form-group">
+        <input type="text" id="amount" placeholder="Token amount">
+      </div>
+      <div class="form-group">
+        <input type="text" id="vestingPeriod_Timelock" placeholder="Lock duration">
+      </div>
+      <div class="form-group">
+        <label for="stakeholderType">Zero indexed: [community, investors, presale_buyers, founders]</label>
+        <input type="text" id="stakeholderType" placeholder="Type of stakeholder">
+      </div>
+      <button type="button" id="addStakeholderBtn">Add Stakeholder</button>
+    </form>
+    </div>
+  </div>
 
   <div id="whitelistAddress">
-    <input type="text" id="userAddress" placeholder="Stakeholder address">
-    <button id="whitelistAddressBtn">Whitelist</button>
-  </div> <br> <br>
-
-  <div id="claimTokens">
-    <button id="claimTokensBtn">Withdraw</button>
-  </div> <br> <br>
-
-  <div id="readTime">
-    <button id="readTimeBtn">Read Time</button>
-    <p id="readTimeOutput"></p>
-  </div>
-  
-  <div id="balance">
-    <button id="readTotalBalanceBtn">Total Balance</button>
-    <p id="readBalanceOutput"></p>
+    <div class="form-wrap">
+      <div class="form-group">
+        <input type="text" id="userAddress" placeholder="Stakeholder address">
+        <button type="button" id="whitelistAddressBtn">Whitelist</button>
+      </div>
+    </div>
   </div>
 
   <div id="organizations">
+    <div class="form-wrap">
+      <div class="form-group">
     <input type="text" id="organizationsAddress" placeholder="Organizations address">
-    <button id="organizationsBtn">Organizations</button>
     <p id="organizationsOutput"></p>
+    <button type="button" id="organizationsBtn">Organizations</button>
+      </div>
+    </div>
+  </div>
 
   <div id="stakeholders">
+    <div class="form-wrap">
+      <div class="form-group">
     <input type="text" id="stakeholdersAddress" placeholder="Stakeholders address">
-    <button id="stakeHoldersBtn">Stakeholders</button>
     <p id="stakeholdersOutput"></p>
+    <button type="button" id="stakeHoldersBtn">Stakeholders</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="ReadTime">
+    <div class="form-wrap">
+      <div class="form-group">
+        <div id="readTime">
+          <p id="readTimeOutput"></p>
+          <button type="button" id="readTimeBtn">Read Time</button>
+        </div>
+    </div>
+  </div>
+  
+  <div id="Balance">
+    <div class="form-wrap">
+      <div class="form-group">
+        <div id="balance">
+          <p id="readBalanceOutput"></p>
+          <button type="button" id="readTotalBalanceBtn">Total Balance</button>
+        </div>
+    </div>
+  </div>
+
+  <div id="ClaimTokens">
+    <div class="form-wrap">
+      <div class="form-group">
+        <div id="claimTokens">
+          <button type="button" id="claimTokensBtn">Withdraw</button>
+        </div>
+    </div>
   </div>
 </body>
 </html>

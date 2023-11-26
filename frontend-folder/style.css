@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #344a72;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+}
+
+#navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  max-width: auto;
+  height: 56px;
+  padding: 12px 16px 12px 16px;
+  justify-content: space-between;
+}
+
+#navbar h1 {
+  color: gold;
+}
+
+#connectBtn {
+  background-color: #00ced1;
+  color: #000;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px white solid;
+  padding: 8px;
+}
+
+#connectBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#accountAddress {
+  color: wheat;
+  font-size: large;
+}
+
+#registerOrganization,
+#addStakeholder,
+#whitelistAddress,
+#organizations,
+#stakeholders,
+#Balance,
+#ClaimTokens,
+#ReadTime {
+  margin: 10px auto;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.form-wrap {
+  background: white;
+  padding: 5px 25px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.form-wrap h2 {
+  text-align: center;
+}
+  
+  .form-wrap .form-group {
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  color: #666;
+  font-size: small;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1 px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-wrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-wrap #registerOrganizationBtn {
+  background-color: blueviolet;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #registerOrganizationBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #addStakeholderBtn {
+  background-color: #49c1a2;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #addStakeholderBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #whitelistAddressBtn {
+  background-color: #bbab39;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #whitelistAddressBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #organizationsBtn {
+  background-color: #dc143c;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #organizationsBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #stakeHoldersBtn {
+  background-color: #0e0f3b;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #stakeHoldersBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #readTimeBtn {
+  background-color: #91bfff;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #readTimeBtn:hover {
+  opacity: 0.7;
+}
+
+.form-wrap #readTotalBalanceBtn {
+  background-color: #999999;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #readTotalBalanceBtn:hover {
+  opacity: 0.7;
+}
+
+
+.form-wrap #claimTokensBtn {
+  background-color: greenyellow;
+  color: #000;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.form-wrap #claimTokensBtn:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+

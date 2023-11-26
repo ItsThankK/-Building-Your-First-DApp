@@ -31,8 +31,8 @@ console.log("Welcome to my vesting DApp!!!");
       const signer = provider.getSigner();
       const address = await signer.getAddress();
       console.log("Connected account:", address);
-      document.getElementById("accountAddress").textContent =
-      "Connected Account: " + address;
+      document.getElementById("accountAddress").innerHTML =
+      "Connected Account: " + "&nbsp" + "&nbsp" + address;
 
       await window.ethereum.request({method: "eth_requestAccounts"});
       connectBtn.innerHTML="Wallet Connected"
@@ -65,8 +65,7 @@ console.log("Welcome to my vesting DApp!!!");
       } catch (error) {
         console.log(error);
       }
-  } 
-
+    }
   }
 
   async function addStakeholder() {
@@ -177,7 +176,8 @@ async function organizations() {
     console.log("orgAddress: " + organizationsDetails[2]);
     console.log("initialSupply: " + organizationsDetails[3]);
     console.log("tokenAddress: " + organizationsDetails[4]);
-    document.getElementById("organizationsOutput").innerText = "Stakeholders details: " + "\n" +
+    console.log("\n");
+    document.getElementById("organizationsOutput").innerText = "ORGANIZATION DETAILS: " + "\n" + "\n" +
     "name: " + organizationsDetails[0] + "\n" +
     "symbol: " + organizationsDetails[1] + "\n" +
     "orgAddress: " + organizationsDetails[2] + "\n" +
@@ -199,7 +199,8 @@ async function stakeholders() {
     console.log("releaseTime: " + stakeholdersDetails[2]);
     console.log("isWhitelisted: " + stakeholdersDetails[3]);
     console.log("stakeholderType: " + stakeholdersDetails[4]);
-    document.getElementById("organizationsOutput").innerText = "Stakeholders details: " + "\n" +
+    console.log("\n");
+    document.getElementById("stakeholdersOutput").innerText = "STAKEHOLDER DETAILS: " + "\n" + "\n" +
     "amount: " + stakeholdersDetails[0] + "\n" +
     "vestingPeriod_Timelock: " + stakeholdersDetails[1] + "\n" +
     "releaseTime: " + stakeholdersDetails[2] + "\n" +
