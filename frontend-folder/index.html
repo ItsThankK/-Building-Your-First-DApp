@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vesting DApp</title>
+</head>
+<script defer src="script.js" type="module"></script>
+<body>
+  <h1>My Vesting DApp!</h1>
+
+  <button id="connectBtn">Connect Wallet</button>
+
+  <p id="accountAddress"></p>
+
+  <div id="registerOrganization">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="symbol" placeholder="Token symbol">
+    <input type="text" id="orgAddress" placeholder="Organization address">
+    <input type="text" id="_initialSupply" placeholder="Token supply amount">
+    <input type="text" id="tokenAddress" placeholder="Token address">
+    <button id="registerOrganizationBtn">Register Organization</button>
+  </div> <br> <br>
+
+  <div id="addStakeholder">
+    <input type="text" id="user" placeholder="Address">
+    <input type="text" id="amount" placeholder="Token amount">
+    <input type="text" id="vestingPeriod_Timelock" placeholder="Lock duration">
+    <input type="text" id="stakeholderType" placeholder="Type of stakeholder">
+    <button id="addStakeholderBtn">Add Stakeholder</button>
+  </div> <br> <br>
+
+  <div id="whitelistAddress">
+    <input type="text" id="userAddress" placeholder="Stakeholder address">
+    <button id="whitelistAddressBtn">Whitelist</button>
+  </div> <br> <br>
+
+  <div id="claimTokens">
+    <button id="claimTokensBtn">Withdraw</button>
+  </div> <br> <br>
+
+  <div id="readTime">
+    <button id="readTimeBtn">Read Time</button>
+    <p id="readTimeOutput"></p>
+  </div>
+  
+  <div id="balance">
+    <button id="readTotalBalanceBtn">Total Balance</button>
+    <p id="readBalanceOutput"></p>
+  </div>
+
+  <div id="organizations">
+    <input type="text" id="organizationsAddress" placeholder="Organizations address">
+    <button id="organizationsBtn">Organizations</button>
+    <p id="organizationsOutput"></p>
+
+  <div id="stakeholders">
+    <input type="text" id="stakeholdersAddress" placeholder="Stakeholders address">
+    <button id="stakeHoldersBtn">Stakeholders</button>
+    <p id="stakeholdersOutput"></p>
+  </div>
+</body>
+</html>
